@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+body {
+    background-color: #18122B;
+    font-family: Montserrat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.image {
+   width: 80px; 
+}
+
+nav {
+    margin-bottom: 100px;
+}
+
+.nav-link ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+    gap: 70px;
+    font-size: 20px;
+}
+.nav-link ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.search{
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color:#000000;
+    font-family: inherit;
+    margin-top: 20px;
+}
+
+
+.search::placeholder{
+    color: #7378c5;
+}
+ul {
+    list-style: none;
+}
+
+h2{
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+gap: 30px;
+overflow-y: scroll;
+scrollbar-width: none;
+margin-left: 20px;
+padding-top: 50px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 354px;
+    perspective: 1000px;
+    font-family: sans-serif;
+   
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid #635985;
+    border-radius: 10px;
+}
+  
+.flip-card-front {
+    background-color: #393053;
+    color: white;
+}
+  
+.flip-card-back {
+    background-color: #443C68;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+span {
+    font-family: Montserrat;
+    font-size: 18px;
+}
+span.green {
+color: green;
+}
+
+span.orange {
+    color: orangered;
+}
+
+span.red {
+    color: red;
+}
+
+.imaage {
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+h3 {
+    font-size: 15px;
+    font-family: Montserrat;
+}
+
+.movie {
+    width: 300px;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: Montserrat;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;  
+}
