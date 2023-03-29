@@ -117,9 +117,14 @@ padding-top: 50px;
 span {
     font-family: Montserrat;
     font-size: 18px;
+    border: 1px solid #ffffff;
+    background-color: #635985;
+    box-shadow: -5px 5px 8px 1px #000000;
+    border-radius: 5px;
+
 }
 span.green {
-color: green;
+color: rgb(58, 216, 58);
 }
 
 span.orange {
