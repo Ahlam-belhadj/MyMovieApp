@@ -66,6 +66,9 @@ margin-left: 20px;
 padding-top: 50px;
 }
 
+#container::-webkit-scrollbar {
+    display: none;
+}
 .flip-card {
     background-color: transparent;
     width: 200px;
@@ -117,9 +120,9 @@ padding-top: 50px;
 span {
     font-family: Montserrat;
     font-size: 18px;
-    border: 1px solid #ffffff;
-    background-color: #635985;
-    box-shadow: -5px 5px 8px 1px #000000;
+
+    background-color: #18122B;
+
     border-radius: 5px;
 
 }
@@ -157,3 +160,22 @@ h1 {
     margin-bottom: 20px;
     margin-left: 20px;  
 }
+
+#ba{ 
+    background-color: rgba(23, 26, 32, 0.8); 
+    border: none; 
+    border-radius: 6px; 
+    color: #fff; 
+margin-top: 15px;
+width: 75px;
+    color:white; 
+    cursor: pointer; 
+align-items: center;
+margin-left: 60px;
+    } 
+    
+    #ba:hover{ 
+    background-color: rgba(23, 26, 32, 1); 
+    cursor: pointer; 
+    } 
+    
