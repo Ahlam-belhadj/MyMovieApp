@@ -11,15 +11,12 @@ const contenue = document.getElementById('container2');
 
 getMovies(API_URL); //fonction
 
-
 function getMovies(url) {
 //recupére l'url 
     fetch(url).then(res => res.json()).then(data => {
         showMovies(data.results);
     })
 }
-
-
 
 function showMovies(data) {
     container.innerHTML = '';
@@ -52,7 +49,7 @@ container.appendChild(movieEl);
 });
 }
 
-
+// couleur des notes 
 function getColor(vote) {
     if(vote >=7){
         return 'green';
@@ -64,6 +61,7 @@ function getColor(vote) {
 }
 
 
+// bar de recherche 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const searchTerm = search.value;
@@ -74,5 +72,3 @@ form.addEventListener('submit', (e) => {
         getMovies(API_URL)
     }
 })
-
-
